@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-    <p>Антон Попов</p>
+  <body class="page__body">
+    <header class="header">
+      <a class="logo" href="#">
+        <img src="../source/img/svg/mishka-logo-mobile.svg" width="85.97px" height="34.92px" alt="Логотип Мишка">
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <a class="navigation__link-catalog" href="catalog.html">Каталог товаров</a>
+        <a class="navigation__link-order" href="#">Вязание на заказ</a>
+        <a class="navigation__link-search" href="#">Поиск по сайту</a>
+        <a class="navigation__link-cart" href="#">Корзина</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-block">
+        <img class="hero-block__image" src="../source/img/png/hero-mobile.png" height="373px" width="368px" alt="Образцы товаров магазина.">
+        <h1>Милые штуки ручной работы для дома</h1>
+        <a class="hero-block__link-interior" href="#">Предмет интерьера</a>
+        <a class="hero-block__link-toys" href="#">Детские игрушки</a>
+      </section>
+      <section class="featured">
+        <h2>Вязаные корзинки</h2>
+        <h3>Товар недели</h3>
+        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+        <table>
+          <tr>
+            <td>Цвет:</td>
+            <td>тиффани/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img src="../source/img/jpeg/triple-set-mobile.jpg" width="260px" height="315px" alt="Вязаные корзинки.">
+        <p class="price">Цена: 990 руб.</p>
+        <a class="link" href="#">Заказать</a>
+      </section>
+      <section class="about">
+        <h2>Коротко о нас</h2>
+        <ul>
+          <li class="about__list-item">Экологически чистые материалы</li>
+          <li class="about__list-item">Скандинавский стиль по российской цене</li>
+          <li class="about__list-item">Увеличивает лайки на фотографиях</li>
+          <li class="about__list-item">Связано вручную с любовью и умилением</li>
+          <li class="about__list-item">Поддержка отечественного производителя</li>
+          <li class="about__list-item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2>Отзывы</h2>
+        <div class="reviews_list">
+          <a class="link" href="#">Написать</a>
+          <blockquote class="reviews__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Анастасия Красильникова<br>@misssssiskras</cite>
+            </div>
+          </blockquote>
+          <a class="link__arrow-right" href="#"></a>
+          <a class="link__arrow-left" href="#"></a>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <table>
+          <tr>
+            <td>e-mail:</td>
+            <td>info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td>адрес:</td>
+            <td>г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</td>
+          </tr>
+        </table>
+      <img src="../source/img/png/map-mobile.png">
+      <a class="link" href="#">Напишите нам</a>
+    </section>
+    <footer class="footer">
+      <a class="footer__link-social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+      <a class="footer__link-social-youtube" href="#"><span class="visually hidden>">YouTube</span></a>
+      <a class="footer__link-social-telegram" href="#"><span class="visually hidden">Телеграм</span></a>
+      <p>Разработано</p>
+      <a class="footer__link-html-academy" href="#"><span class="visually-hidden">HTML-Academy</span></a>
+    </footer>
+    </main>
   </body>
 </html>
